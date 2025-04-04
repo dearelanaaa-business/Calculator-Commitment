@@ -1,4 +1,4 @@
-/* Apply a uniform font across the entire system */
+/* Apply a uniform font and size */
 body, h1, h2, p, label, input, button, #output-container {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-size: 16px;
@@ -20,24 +20,27 @@ body {
 }
 
 /* Salary Input Container */
-.salary-container {
+.salary-input {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.salary-container label {
-    display: block;
+.salary-input label {
+    margin-bottom: 8px;
     font-weight: 600;
-    margin-bottom: 5px;
-    text-align: center; /* Center label text */
+    text-align: center;
 }
 
-.salary-container input {
-    width: 100%;
-    padding: 10px;
+.salary-input input {
+    width: 200px;
+    padding: 8px;
+    text-align: center;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -49,7 +52,6 @@ body {
     gap: 20px;
 }
 
-/* Category Boxes */
 .category {
     background: white;
     padding: 20px;
@@ -57,26 +59,25 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Numbered, Underlined Headings */
 .category h2 {
     margin-bottom: 15px;
-    text-decoration: underline; /* Underline the headings */
-    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
-/* Center Labels */
 .category label {
     display: block;
     text-align: center;
     font-weight: 600;
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 
-/* Category Inputs */
 .category input {
-    width: 100%;
+    width: 160px;
     padding: 8px;
-    margin-top: 5px;
+    text-align: center;
+    margin: 0 auto;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -111,4 +112,15 @@ button:hover {
 #total-expenses, #balance {
     font-size: 16px;
     margin: 10px 0;
+}
+
+/* Remove number input spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
 }
