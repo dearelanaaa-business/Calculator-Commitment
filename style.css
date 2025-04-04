@@ -19,26 +19,25 @@ body {
     margin: 20px auto;
 }
 
-/* Salary Input Container */
-.salary-input {
+/* Salary Input Container - Same Size as Output Container */
+.salary-container {
     background: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.salary-input label {
-    margin-bottom: 8px;
-    font-weight: 600;
+    width: 400px; /* Same width as output container */
+    margin: 20px auto;
     text-align: center;
 }
 
-.salary-input input {
-    width: 200px;
+.salary-container label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.salary-container input {
+    width: 200px; /* Enough for 10 digits */
     padding: 8px;
     text-align: center;
     border: 1px solid #ccc;
@@ -99,9 +98,10 @@ button:hover {
     background-color: #218838;
 }
 
-/* Output Container */
+/* Output Container - Same Size as Salary Container */
 #output-container {
-    margin-top: 30px;
+    width: 400px; /* Same width as salary input container */
+    margin: 30px auto;
     background: #ffffff;
     padding: 20px;
     border-radius: 10px;
