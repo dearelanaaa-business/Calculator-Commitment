@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Budget Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Budget Calculator</h1>
+    <p>Enter your salary and expenses to calculate your balance.</p>
+
+    <div class="salary-container">
+        <label for="salary">Enter Your Monthly Salary (MYR):</label>
+        <input type="number" id="salary" name="salary" />
+    </div>
+
+    <div class="container">
+        <div class="categories">
+            <!-- Categories go here -->
+            <div class="category">
+                <h2>Housing</h2>
+                <label>Rent/Mortgage Payments:</label> <input type="number">
+                <label>Property Taxes & HOA Fees:</label> <input type="number">
+                <label>Home Repairs & Maintenance:</label> <input type="number">
+                <label>Home Security:</label> <input type="number">
+                <label>Home Improvement & Renovations:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Utilities</h2>
+                <label>Electricity Bill:</label> <input type="number">
+                <label>Water & Sewer:</label> <input type="number">
+                <label>Internet & WiFi Services:</label> <input type="number">
+                <label>Cable & Streaming TV Services:</label> <input type="number">
+                <label>Gas & Heating:</label> <input type="number">
+                <label>Trash & Recycling Services:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Insurance</h2>
+                <label>Health Insurance Premiums:</label> <input type="number">
+                <label>Dental & Vision Insurance:</label> <input type="number">
+                <label>Homeowner’s/Renter’s Insurance:</label> <input type="number">
+                <label>Auto Insurance:</label> <input type="number">
+                <label>Life Insurance:</label> <input type="number">
+                <label>Disability Insurance:</label> <input type="number">
+                <label>Pet Insurance:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Transportation</h2>
+                <label>Fuel & Gasoline:</label> <input type="number">
+                <label>Public Transit:</label> <input type="number">
+                <label>Car Loan Payments:</label> <input type="number">
+                <label>Car Insurance & Registration Fees:</label> <input type="number">
+                <label>Vehicle Repairs & Maintenance:</label> <input type="number">
+                <label>Parking Fees & Tolls:</label> <input type="number">
+                <label>Bicycle or Scooter Maintenance:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Food</h2>
+                <label>Groceries & Supermarket Shopping:</label> <input type="number">
+                <label>Restaurants & Dining Out:</label> <input type="number">
+                <label>Takeout & Delivery Services:</label> <input type="number">
+                <label>Coffee Shops & Beverages:</label> <input type="number">
+                <label>Meal Subscription Plans:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Healthcare</h2>
+                <label>Doctor & Specialist Visits:</label> <input type="number">
+                <label>Prescription Medications:</label> <input type="number">
+                <label>Over-the-Counter Medications & Supplements:</label> <input type="number">
+                <label>Dental Care & Orthodontics:</label> <input type="number">
+                <label>Vision Care:</label> <input type="number">
+                <label>Physical Therapy & Alternative Medicine:</label> <input type="number">
+                <label>Mental Health Therapy & Counseling:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Entertainment</h2>
+                <label>Streaming Services:</label> <input type="number">
+                <label>Movie Theaters & Events:</label> <input type="number">
+                <label>Concerts & Live Shows:</label> <input type="number">
+                <label>Video Games & In-App Purchases:</label> <input type="number">
+                <label>Books & Magazines:</label> <input type="number">
+                <label>Outdoor Recreation:</label> <input type="number">
+                <label>Hobby Equipment:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Debt Payments</h2>
+                <label>Credit Card Payments:</label> <input type="number">
+                <label>Student Loans:</label> <input type="number">
+                <label>Personal Loans:</label> <input type="number">
+                <label>Mortgage Principal Payments:</label> <input type="number">
+                <label>Car Loan Repayments:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Education</h2>
+                <label>Tuition Fees:</label> <input type="number">
+                <label>Textbooks & Course Materials:</label> <input type="number">
+                <label>School Supplies:</label> <input type="number">
+                <label>Extracurricular Activities:</label> <input type="number">
+                <label>Online Learning Platforms & Certifications:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Savings & Investments</h2>
+                <label>Retirement Contributions:</label> <input type="number">
+                <label>Emergency Savings Fund:</label> <input type="number">
+                <label>Stock Market & Investment Accounts:</label> <input type="number">
+                <label>Real Estate Investment:</label> <input type="number">
+                <label>College Savings:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Personal Expenses</h2>
+                <label>Clothing & Shoes:</label> <input type="number">
+                <label>Salon & Grooming:</label> <input type="number">
+                <label>Gym Membership & Fitness Classes:</label> <input type="number">
+                <label>Self-Care & Wellness:</label> <input type="number">
+                <label>Subscriptions:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Childcare & Parenting</h2>
+                <label>Babysitting & Nanny Services:</label> <input type="number">
+                <label>Daycare & Preschool Fees:</label> <input type="number">
+                <label>Diapers & Baby Supplies:</label> <input type="number">
+                <label>School Lunches & Snacks:</label> <input type="number">
+                <label>Children’s Clothing & Shoes:</label> <input type="number">
+                <label>Extracurricular Activities for Kids:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Gifts & Donations</h2>
+                <label>Charitable Donations:</label> <input type="number">
+                <label>Religious Offerings & Tithes:</label> <input type="number">
+                <label>Birthday Gifts & Holiday Presents:</label> <input type="number">
+                <label>Wedding & Anniversary Gifts:</label> <input type="number">
+                <label>Fundraising & GoFundMe Contributions:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Travel</h2>
+                <label>Airfare & Plane Tickets:</label> <input type="number">
+                <label>Hotels & Accommodations:</label> <input type="number">
+                <label>Car Rentals & Transportation Costs:</label> <input type="number">
+                <label>Travel Insurance:</label> <input type="number">
+                <label>Vacation Activities:</label> <input type="number">
+                <label>Travel Gear:</label> <input type="number">
+            </div>
+
+            <div class="category">
+                <h2>Pets</h2>
+                <label>Pet Food & Treats:</label> <input type="number">
+                <label>Veterinary Checkups & Vaccinations:</label> <input type="number">
+                <label>Pet Grooming & Hygiene:</label> <input type="number">
+                <label>Pet Insurance:</label> <input type="number">
+                <label>Pet Boarding & Sitting Services:</label> <input type="number">
+                <label>Pet Toys & Accessories:</label> <input type="number">
+            </div>
+        </div>
+        
+        <button onclick="calculateBalance()">Calculate</button>
+
+    <div id="output-container">
+        <div id="total-expenses">Total Expenses: MYR 0.00</div>
+        <div id="balance">Remaining Balance: MYR 0.00</div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
